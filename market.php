@@ -37,6 +37,7 @@
 				font-weight: 700;
 				color: crimson;
 			}
+		
 		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
@@ -44,7 +45,7 @@
 	<body>
 
 
-
+           <div id="final">
 		<!-- One -->
 			<section id="one" class="wrapper style1 align-center" style="height: 600px">
 				<div class="container">
@@ -127,7 +128,7 @@
 				</div>
 			</footer>-->
 
-
+			</div>
 
 
 	</body>

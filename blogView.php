@@ -118,6 +118,36 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-xlarge.css" />
 		<link rel="stylesheet" href="Blog/commentBox.css" />
+		<style>
+			.wrapper{
+				background-color: blanchedalmond;
+			}
+			.button special fit:hover{
+                 cursor: pointer;
+			}
+			.box{
+				border: 4px solid black;
+				background-color: antiquewhite;
+				color: black;
+				font-weight: 70;
+			}
+			.con darker{
+				margin-top: 2000px;
+			}
+			.box > :last-child, .box > :last-child > :last-child, .box > :last-child > :last-child > :last-child{
+				margin-top: 90px;
+                margin-right: 70px;
+			}
+			#comment{
+				border:2px solid black;
+			}
+			.button.special {
+				background-color: darkgreen !important;
+			}
+			.button.special:hover {
+                 background-color: darkgreen;
+			}
+		</style>
 	</head>
 	<body class="subpage">
 
@@ -134,7 +164,7 @@
 
 						</div>
 						<div class="3u 12u$(small)">
-							<a href="blogWrite.php" class="button special fit"><span class="glyphicon glyphicon-pencil"></span> Write a Blog</a>
+							<a href="blogWrite.php" class="button special fit" style="background-color:green;" ><span class="glyphicon glyphicon-pencil"></span> Write a Blog</a>
 						</div>
 					</div>
 					<br />
