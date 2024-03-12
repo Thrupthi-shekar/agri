@@ -37,6 +37,20 @@
 		<link rel="stylesheet" href="../css/skel.css" />
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="../css/style-xlarge.css" />
+        <style>
+            .h1{
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 800;
+                color:rgb(100,200,200);
+                margin-left: 10px;
+                font-size: 100px;
+                /* overflow: hidden; */
+                transition: all ease 1s;
+            }
+            .h1:hover{
+                scale:1.4;
+            }
+        </style>
     </head>
 
     <body>
@@ -47,7 +61,7 @@
         <section id="banner" class="wrapper">
             <div class="container">
                 <header class="major">
-                    <h2>Welcome</h2>
+                    <h1 class="h1">Welcome</h1>
                 </header>
                 <p>
                 <?php
@@ -92,6 +106,7 @@
                     </div>
 
                 <?php endif; ?>
+
 
 
     </body>

@@ -22,7 +22,7 @@
         }
         else {
             echo $result->mysqli_error();
-            //$_SESSION['message'] = "Sorry!<br />Order was not placed";
+            // $_SESSION['message'] = "Sorry!<br />Order was not placed";
             //header('Location: Login/error.php');
         }
     }
@@ -53,6 +53,11 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
 		</noscript>
+        <style>
+            #main{
+                background-color:lightcyans;
+            }
+        </style>
 </head>
 <body>
 
@@ -64,41 +69,41 @@
     <section id="main" class="wrapper" >
         <div class="container">
         <center>
-                <h2>Transaction Details</h2>
+                <h1 style="text-decoration:underline;font-weight:bold">Transaction Details</h1>
         </center>
         <section id="two" class="wrapper style2 align-center">
         <div class="container">
             <center>
-                <form method="post" action="buyNow.php?pid=<?= $pid; ?>" style="border: 1px solid black; padding: 15px;">
+                <form method="post"  action="buyNow.php?pid=<?= $pid; ?>" style="border: 1px solid black; padding: 15px;">
                     <center>
                     <div class="row uniform">
                         <div class="6u 12u$(xsmall)">
-                            <input type="text" name="name" id="name" value="" placeholder="Name" required/>
+                            <input type="text" style="border:2px solid black" name="name" id="name" value="" placeholder="Name" required/>
                         </div>
                         <div class="6u 12u$(xsmall)">
-                            <input type="text" name="city" id="city" value="" placeholder="City" required/>
+                            <input type="text" style="border:2px solid black" name="city" id="city" value="" placeholder="City" required/>
                         </div>
                     </div>
                     <div class="row uniform">
                         <div class="6u 12u$(xsmall)">
-                            <input type="text" name="mobile" id="mobile" value="" placeholder="Mobile Number" required/>
+                            <input type="text" style="border:2px solid black" name="mobile" id="mobile" value="" placeholder="Mobile Number" required/>
                         </div>
 
                         <div class="6u 12u$(xsmall)">
-                            <input type="email" name="email" id="email" value="" placeholder="Email" required/>
+                            <input type="email" style="border:2px solid black" name="email" id="email" value="" placeholder="Email" required/>
                         </div>
                     </div>
                     <div class="row uniform">
                         <div class="4u 12u$(xsmall)">
-                            <input type="text" name="pincode" id="pincode" value="" placeholder="Pincode" required/>
+                            <input type="text" style="border:2px solid black" name="pincode" id="pincode" value="" placeholder="Pincode" required/>
                         </div>
                         <div class="8u 12u$(xsmall)">
-                            <input type="text" name="addr" id="addr" value="" placeholder="Address" style="width:80%" required/>
+                            <input type="text" style="border:2px solid black" name="addr" id="addr" value="" placeholder="Address" style="width:80%" required/>
                         </div>
                     </div>
                     <br />
                     <p>
-                        <input type="submit" value="Confirm Order" />
+                        <input type="submit" style="border:2px solid black" value="Confirm Order" />
                     </p>
                 </center>
             </form>

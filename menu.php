@@ -20,10 +20,25 @@
 ?>
 
 <!DOCTYPE html>
+<style>
+	#header{
+		background:black;
+		padding:40px;
+		border: 4px solid black;
+	
+		#header {
+            
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+	}
+</style>
 			<header id="header">
 				<h1><a href="index.php">AgroCulture</a></h1>
 				<nav id="nav">
-					<ul>
+					<ul style="list-style: none;" >
 						<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
 						<!-- <li><a href="myCart.php"><span class="glyphicon glyphicon-shopping-cart"> MyCart</a></li> -->
 						<li><a href="<?= $link; ?>"><span class="<?php echo $logo; ?>"></span><?php echo" ". $loginProfile; ?></a></li>

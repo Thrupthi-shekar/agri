@@ -108,6 +108,26 @@
 		</noscript>
 		<script src="https://cdn.ckeditor.com/4.8.0/full/ckeditor.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<style>
+			.Hi1{
+				font: size 30%;
+				font-weight: bold;
+				color:mediumblue;
+			}
+			#pname{
+				margin-top:1px;
+				border: 2px solid black;
+			}
+			.button fit{
+				background-color: darkgreen;
+			}
+			#type{
+				border: 2px solid black;
+			}
+			#price{
+				border: 2px solid black;
+			}
+		</style>
 	</head>
 	<body>
 
@@ -118,7 +138,7 @@
 			<section id="one" class="wrapper style1 align-center">
 				<div class="container">
 					<form method="POST" action="uploadProduct.php" enctype="multipart/form-data">
-						<h2>Enter the Product Information here..!!</h2>
+						<h1 class="Hi1">Enter the Product Information here..!!</h1>
 						<br>
 				<center>
 					<input type="file" name="productPic"></input>
@@ -149,7 +169,7 @@
 					  <input type="text" name="price" id="price" value="" placeholder="Price" style="background-color:white;color: black;" />
 				</div>
 				<div class="col-sm-6">
-					<button class="button fit" style="width:auto; color:black;">Submit</button>
+					<button class="button fit" style="border:2px solid black;margin-top: 10px;" >Submit</button>
 				</div>
 			</div>
 			</form>

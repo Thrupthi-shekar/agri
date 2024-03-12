@@ -30,6 +30,13 @@
 				font-weight: 700;
 				color:midnightblue;
 			}
+			#header {
+            
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
 		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>

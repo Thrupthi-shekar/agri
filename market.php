@@ -37,6 +37,21 @@
 				font-weight: 700;
 				color: crimson;
 			}
+			#one{
+				margin-bottom: 0px;
+			
+            /* position: fixed; */
+            top: 0;
+            width: 100%;
+            /* z-index: 1000; */
+        }
+		
+			#header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
 		
 		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
@@ -47,7 +62,7 @@
 
            <div id="final">
 		<!-- One -->
-			<section id="one" class="wrapper style1 align-center" style="height: 600px">
+			<section id="one" class="wrapper style1 align-center" style="height: 1000px">
 				<div class="container">
 					<h1 class="h1">Welcome to Digital Market</h1>
 					<br /><br />

@@ -1,30 +1,8 @@
--- phpMyAdmin SQL Dump
--- version 4.6.4
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Feb 26, 2018 at 07:52 AM
--- Server version: 5.7.14
--- PHP Version: 5.6.25
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `agroculture`
---
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `blogdata`
---
+
 
 CREATE TABLE `blogdata` (
   `blogId` int(10) NOT NULL,
@@ -40,11 +18,8 @@ CREATE TABLE `blogdata` (
 --
 
 INSERT INTO `blogdata` (`blogId`, `blogUser`, `blogTitle`, `blogContent`, `blogTime`, `likes`) VALUES
-(19, 'ThePhenom', 'First Blog', '<p>Its Awesome website<img alt="wink" src="https://cdn.ckeditor.com/4.8.0/full/plugins/smiley/images/wink_smile.png" style="height:23px; width:23px" title="wink" /></p>\r\n', '2018-02-25 13:09:41', 1);
+(19, 'Thrupthi', 'My First Blog', '<p>Its Awesome website<img alt="wink" src="https://cdn.ckeditor.com/4.8.0/full/plugins/smiley/images/wink_smile.png" style="height:23px; width:23px" title="wink" /></p>\r\n', '2018-02-25 13:09:41', 1);
 
--- --------------------------------------------------------
-
---
 -- Table structure for table `blogfeedback`
 --
 
@@ -61,11 +36,10 @@ CREATE TABLE `blogfeedback` (
 --
 
 INSERT INTO `blogfeedback` (`blogId`, `comment`, `commentUser`, `commentPic`, `commentTime`) VALUES
-(19, 'Mast yarr', 'ThePhenom', 'profile0.png', '2018-02-25 13:09:54');
+(19, 'Good Product', 'Thrupthi', 'profile0.png', '2018-02-25 13:09:54');
 
 -- --------------------------------------------------------
 
---
 -- Table structure for table `buyer`
 --
 
@@ -105,7 +79,7 @@ CREATE TABLE `farmer` (
 --
 
 INSERT INTO `farmer` (`fid`, `fname`, `fusername`, `fpassword`, `femail`, `fmobile`, `faddress`, `factive`, `frating`, `picExt`, `picStatus`) VALUES
-(3, 'Varun D C', 'varun', 'varun@123', 'varunchinnu177@gmail.com', '7892326105', 'hassan', 0, 0, 'png', 0);
+(3, 'Thrupthi', 'Thrupthi', 'thrupthi@123', 'thrupthi@gmail.com', '8310876797', 'hassan', 0, 0, 'png', 0);
 
 -- --------------------------------------------------------
 
@@ -129,10 +103,10 @@ CREATE TABLE `fproduct` (
 --
 
 INSERT INTO `fproduct` (`fid`, `pid`, `product`, `pcat`, `pinfo`, `price`, `pimage`, `picStatus`) VALUES
-(3, 27, 'Mango', 'Fruit', '<p>Mango raseela</p>\r\n', 500, 'Mango3.jpeg', 1),
-(3, 28, 'Ladyfinger', 'Vegetable', '<p>Its veggie</p>\r\n', 1000, 'Ladyfinger3.jpg', 1),
-(3, 29, 'Bajra', 'Grains', '<p>bajre di rti</p>\r\n', 400, 'Bajra3.jpg', 1),
-(3, 30, 'Banana', 'Fruit', '<p>Jalgaon banana</p>\r\n', 400, 'Banana3.jpg', 1);
+(3, 27, 'Strawberry', 'Fruit', '<p>Strawberry</p>\r\n', 500, 'strawberry.jpeg', 1),
+(3, 28, 'Ladyfinger', 'Vegetable', '<p>Its veggie</p>\r\n', 1000, 'Ladyfinger.jpg', 1),
+(3, 29, 'Bajra', 'Grains', '<p>bajre di rti</p>\r\n', 400, 'Bajra.jpg', 1),
+(3, 30, 'Banana', 'Fruit', '<p>Jalgaon banana</p>\r\n', 400, 'banana.jpg', 1);
 
 -- --------------------------------------------------------
 -- 
@@ -207,7 +181,7 @@ CREATE TABLE `transaction` (
 --
 
 INSERT INTO `transaction` (`tid`, `bid`, `pid`, `name`, `city`, `mobile`, `email`, `pincode`, `addr`) VALUES
-(1, 3, 28, 'sa,j,cns', 'sajc', 'sajch', 'kmendki98@gmail.com', 'sacu', 'ckaskjc');
+(1, 3, 28, 'Thrupthi', 'Hassan', '9844019171', 'thrupthi@gmail.com', '573201', 'shantinagar');
 
 --
 -- Indexes for dumped tables
@@ -297,6 +271,3 @@ ALTER TABLE `transaction`
 ALTER TABLE `likedata`
   ADD CONSTRAINT `likedata_ibfk_1` FOREIGN KEY (`blogId`) REFERENCES `blogdata` (`blogId`);
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

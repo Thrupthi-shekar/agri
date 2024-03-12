@@ -14,10 +14,26 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="bootstrap\js\bootstrap.min.js"></script>
         <link rel="stylesheet" href="assets/css/main.css" />
+
+        <style>
+            #post{
+                border: 4px solid black;
+                width:100%;
+                /* display:inline-block; */
+                background-color: bisque;
+                padding: 150px;
+                margin-top:120px;
+                
+            }
+            .button special small{
+                border:2px solid black !important; 
+            }
+            
+        </style>
     </head>
 
     <body class="subpage">
-
+<center>
         <?php
             require 'menu.php';
         ?>
@@ -38,26 +54,26 @@
                             <input type="submit" class="button special small" name="upload" value="Upload" />
                             <input type="submit" class="button special small" name="remove" value="Remove" />
                         </div>
-                    </form>
+                    </form> <br>
                 </header>
                 <form method="post" action="Profile/updateProfile.php">
                     <div class="row uniform">
                         <div class="8u 12u$(xsmall)">
                             <input type="text" name="name" id="name" value="<?php echo $_SESSION['Name'];?>" placeholder="Full Name" required />
-                        </div>
+                        </div> <br>
                         <div class="4u 12u$(xsmall)">
                             <input type="text" name="mobile" id="mobile" value="<?php echo $_SESSION['MobileNo'];?>" placeholder="Mobile No" required/>
-                        </div>
+                        </div> <br>
                         <div class="6u 12u$(xsmall)">
                             <input type="text" name="uname" id="uname" value="<?php echo $_SESSION['Username'];?>" placeholder="Username" required/>
-                        </div>
+                        </div> <br>
                         <div class="6u 12u$(xsmall)">
                             <input type="email" name="email" id="email" value="<?php echo $_SESSION['Email'];?>" placeholder="Email" required/>
-                        </div>
-                        <div class="6u 12u$(xsmall)">
+                        </div> <br>
+                        <!-- <div class="6u 12u$(xsmall)">
                             <div class="select-wrapper">
                               <select name="section" id="section">
-                                    <option value="<?php echo $_SESSION['Section'];?>"><?php echo $_SESSION['Section'];?></option>
+                                    <option value="</option>
                                     <option value="Band">Band</option>
                                     <option value="Drama">Drama</option>
                                     <option value="Dance">Dance</option>
@@ -65,8 +81,8 @@
                                     <option value="Other">Other</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="6u 12u$(xsmall)">
+                        </div> -->
+                        <!-- <div class="6u 12u$(xsmall)" style="width:50%" >
                             <input type="text" name="post" id="post" value="<?php echo $_SESSION['Post'];?>" placeholder="Post Name" required/>
                         </div>
                         <p>
@@ -83,7 +99,7 @@
                          <div class="3u 12u$(small)">
                             <input type="radio" id="mtech" name="edu" value="M.TECH">
                             <label for="mtech">M.TECH</label>
-                        </div>s
+                        </div>
                         <p>
                             <b>Choose Year : </b>
                         </p>
@@ -102,7 +118,7 @@
                          <div class="2u 12u$(small)">
                             <input type="radio" id="4" name="year" value="4">
                             <label for="4">4<sup>th</sup> Year</label>
-                        </div>
+                        </div>-->
                         <div class="12u$">
                         <center>
                             <input type="submit" class = "button special" value="Update Profile" />
@@ -111,7 +127,7 @@
                     </div>
                 </form>
                 </div>
-            </div>
+            </div> 
         </section>
 
         <!-- Scripts -->
@@ -121,6 +137,6 @@
             <script src="assets/js/skel.min.js"></script>
             <script src="assets/js/util.js"></script>
             <script src="assets/js/main.js"></script>
-
+            </center>
     </body>
 </html>

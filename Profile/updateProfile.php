@@ -8,19 +8,19 @@
         $mobile = dataFilter($_POST['mobile']);
         $user = dataFilter($_POST['uname']);
         $email = dataFilter($_POST['email']);
-        $section = dataFilter($_POST['section']);
-        $post = dataFilter($_POST['post']);
-        $year = dataFilter($_POST['year']);
-        $edu = dataFilter($_POST['edu']);
+        // $section = dataFilter($_POST['section']);
+        // $post = dataFilter($_POST['post']);
+        // $year = dataFilter($_POST['year']);
+        // $edu = dataFilter($_POST['edu']);
 
         $_SESSION['Email'] = $email;
         $_SESSION['Name'] = $name;
         $_SESSION['Username'] = $user;
         $_SESSION['MobileNo'] = $mobile;
-        $_SESSION['Section'] = $section;
-        $_SESSION['Post'] = $post;
-        $_SESSION['Edu'] = $edu;
-        $_SESSION['Year'] = $year;
+        // $_SESSION['Section'] = $section;
+        // $_SESSION['Post'] = $post;
+        // $_SESSION['Edu'] = $edu;
+        // $_SESSION['Year'] = $year;
     }
     $id = $_SESSION['id'];
 
