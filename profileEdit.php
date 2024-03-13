@@ -59,16 +59,16 @@
                 <form method="post" action="Profile/updateProfile.php">
                     <div class="row uniform">
                         <div class="8u 12u$(xsmall)">
-                            <input type="text" name="name" id="name" value="<?php echo $_SESSION['Name'];?>" placeholder="Full Name" required />
+                            Name: <input type="text" name="name" id="name" value="<?php echo $_SESSION['Name'];?>" placeholder="Full Name" required />
                         </div> <br>
                         <div class="4u 12u$(xsmall)">
-                            <input type="text" name="mobile" id="mobile" value="<?php echo $_SESSION['MobileNo'];?>" placeholder="Mobile No" required/>
+                            Mobile No: <input type="text" name="mobile" id="mobile" value="<?php echo $_SESSION['Mobile'];?>" placeholder="Mobile No" required/>
                         </div> <br>
                         <div class="6u 12u$(xsmall)">
-                            <input type="text" name="uname" id="uname" value="<?php echo $_SESSION['Username'];?>" placeholder="Username" required/>
+                            Username: <input type="text" name="uname" id="uname" value="<?php echo $_SESSION['Username'];?>" placeholder="Username" required/>
                         </div> <br>
                         <div class="6u 12u$(xsmall)">
-                            <input type="email" name="email" id="email" value="<?php echo $_SESSION['Email'];?>" placeholder="Email" required/>
+                            Email: <input type="email" name="email" id="email" value="<?php echo $_SESSION['Email'];?>" placeholder="Email" required/>
                         </div> <br>
                         <!-- <div class="6u 12u$(xsmall)">
                             <div class="select-wrapper">
