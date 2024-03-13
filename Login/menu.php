@@ -3,13 +3,7 @@
 	{
 		$loginProfile = "My Profile: ". $_SESSION['Username'];
 		$logo = "glyphicon glyphicon-user";
-		if($_SESSION['Category']!= 1)
-		{
-			$link = "profile.php";
-		}
-		else {
-				$link = "../profileView.php";
-		}
+		$link = "../profileView.php";
 	}
 	else
 	{
