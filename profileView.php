@@ -119,9 +119,11 @@ if (!isset($_SESSION['logged_in']) or $_SESSION['logged_in'] != 1) {
                             <div class="3u 12u$(large)">
                                 <a href="profileEdit.php" class="btn btn-danger" style="text-decoration: none;">Edit Profile</a>
                             </div>
+                            <?php if($_SESSION['Category']!= 0): ?>
                             <div class="3u 12u$(xsmall)">
                                 <a href="uploadProduct.php" class="btn btn-danger" style="text-decoration: none;">Upload Product</a>
                             </div>
+                            <?php endif; ?>
                             <div class="3u 12u$(large)">
                                 <a href="Login/logout.php" class="btn btn-danger" style="text-decoration: none;">LOG OUT</a>
                             </div>
