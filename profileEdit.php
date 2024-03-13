@@ -22,7 +22,6 @@
                 /* display:inline-block; */
                 background-color: bisque;
                 padding: 150px;
-                margin-top:120px;
                 
             }
             .button special small{
